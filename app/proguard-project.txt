@@ -1,0 +1,109 @@
+#android环境下，一般不会开启二进制优化和预校验配置，这可能会导致部分机型出现不可预知的结果
+#因此，强烈建议使用以下三项
+-dontoptimize #关闭代码二进制优化
+-dontpreverify #不预校验
+-dontshrink #不进行代码压缩
+-dontskipnonpubliclibraryclasses #开启对非公共库类的混淆
+-dontusemixedcaseclassnames #关闭类名的混合混淆方式，android默认配置，建议使用
+-allowaccessmodification
+-keepattributes *Annotation*,Exceptions,InnerClasses,Signature,Deprecated,EnclosingMethod
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+#若使用mesdk-log4j-adapter,则以下几项需要追加
+-dontwarn org.apache.**
+-dontwarn javax.**
+-dontwarn org.apache.**
+-adaptresourcefilenames **/*.properties,**/*.gif,**/*.dtd
+-adaptresourcefilecontents
+
+#-libraryjars libs/dom4j-1.6.1.jar
+-dontwarn org.dom4j.**
+
+
+
+
+
+
+-dontwarn com.dspread.xpos.bt2mode.dbridge4.** 
+#若需要混淆im81的应用，需要加入该项
+-dontwarn android.newland.**
+-dontwarn com.hisun.ptc.atc.**
+-dontwarn com.landicorp.**
+#跳过sdk已经混淆的部分
+
+
+
+
+-keep interface com.newland.** {*;}
+#-keepattributes *Annotation*
+ #-keep public class com.google.vending.licensing.ILicensingService
+ -keep public class com.android.vending.licensing.ILicensingService
+
+ # For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
+ -keepclasseswithmembernames class * {
+     native <methods>;
+ }
+
+ # keep setters in Views so that animations can still work.
+ # see http://proguard.sourceforge.net/manual/examples.html#beans
+ -keepclassmembers public class * extends android.view.View {
+    void set*(***);
+    *** get*();
+ }
+
+ # We want to keep methods in Activity that could be used in the XML attribute onClick
+ -keepclassmembers class * extends android.app.Activity {
+    public void *(android.view.View);
+ }
+
+ # For enumeration classes, see http://proguard.sourceforge.net/manual/examples.html#enumerations
+ -keepclassmembers enum * {
+     public static **[] values();
+     public static ** valueOf(java.lang.String);
+ }
+
+ -keep class * implements android.os.Parcelable {
+   public static final android.os.Parcelable$Creator *;
+ }
+
+ -keepclassmembers class **.R$* {
+     public static <fields>;
+ }
+ 
+
+
+ # The support library contains references to newer platform versions.
+ # Don't warn about those in case this app is linking against an older
+ # platform version.  We know about them, and they are safe.
+ -dontwarn android.support.**
+ #如果我们自定了ListView,ScrollView,Gallery这些组件的时候，我们就不能混淆这些自定义的类了，因为在layout里面我们已经引用这个了类，而且已经写死了。同样四大组件也是不能打包混淆的
+#四大组件不能混淆
+-keep public class * extends android.app.Activity
+
+ -keep public class * extends android.app.Application {*;}
+
+ -keep public class * extends android.app.Service
+
+ -keep public class * extends android.content.BroadcastReceiver
+
+ -keep public class * extends android.content.ContentProvider
+
+ -keep public class * extends android.app.backup.BackupAgentHelper
+
+ -keep public class * extends android.preference.Preference
+ #自定义控件不要混淆
+-keep public class * extends android.view.View {*;}
+
+ #8）数据适配器adapter不要混淆
+#adapter也不能混淆
+-keep public class * extends android.widget.BaseAdapter {*;}
+
+#如果你使用了CusorAdapter,添加下面这行
+-keep public class * extends android.widget.CusorAdapter{*;}
+#同样如果你觉得麻烦，就直接将BaseAdpater换成Adapter
+ #9）数据模型不要混淆
+-keepnames class * implements java.io.Serializable     #比如我们要向activity传递对象使用了Serializable接口的时候，这时候这个类及类里面#的所有内容都不能混淆
+-keepclassmembers class * implements java.io.Serializable {
+         *;
+ }
+ 

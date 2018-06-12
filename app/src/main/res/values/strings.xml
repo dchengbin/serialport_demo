@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Serial Port API sample</string>
+    <string name="about_msg">
+Serial Port API sample v1.1\n
+\n
+This program is the sample application provided with project android-serialport-api.\n
+\n
+More information and bug report on [http://code.google.com/p/android-serialport-api]\n
+\n
+Copyright 2010-2011 Cedric Priscal\n
+\n
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at\n
+\n
+http://www.apache.org/licenses/LICENSE-2.0\n
+\n
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.\n
+	</string>
+    <string name="error_configuration">Please configure your serial port first.</string>
+    <string name="error_security">You do not have read/write permission to the serial
+		port.</string>
+    <string name="error_unknown">The serial port can not be opened for an unknown
+		reason.</string>
+		
+    <string name="wifi_test">wifi测试</string>
+    <string name="mic_test">mic测试</string>
+    <string name="speaker_test">喇叭测试</string>
+    <string name="serial_test">串口测试</string>
+    <string name="touch_test">触摸测试</string>
+    <string name="short_test">短路测试</string>
+    
+    <string name="wifi_test_stop">停止wifi测试</string>
+    <string name="mic_test_stop">停止mic测试</string>
+    <string name="speaker_test_stop">停止喇叭测试</string>
+    <string name="serial_test_stop">停止串口测试</string>
+    <string name="touch_test_stop">停止触摸测试</string>
+    <string name="short_test_stop">停止短路测试</string>
+		
+ 
+
+</resources>

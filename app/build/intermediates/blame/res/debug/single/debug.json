@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "H:\\android_demo\\serialport\\app\\build\\intermediates\\res\\merged\\debug\\xml_serial_port_preferences.xml.flat",
+        "source": "H:\\android_demo\\serialport\\app\\src\\main\\res\\xml\\serial_port_preferences.xml"
+    },
+    {
+        "merged": "H:\\android_demo\\serialport\\app\\build\\intermediates\\res\\merged\\debug\\raw_haorizi.mp3.flat",
+        "source": "H:\\android_demo\\serialport\\app\\src\\main\\res\\raw\\haorizi.mp3"
+    },
+    {
+        "merged": "H:\\android_demo\\serialport\\app\\build\\intermediates\\res\\merged\\debug\\raw_beij.mp3.flat",
+        "source": "H:\\android_demo\\serialport\\app\\src\\main\\res\\raw\\beij.mp3"
+    },
+    {
+        "merged": "H:\\android_demo\\serialport\\app\\build\\intermediates\\res\\merged\\debug\\layout_console.xml.flat",
+        "source": "H:\\android_demo\\serialport\\app\\src\\main\\res\\layout\\console.xml"
+    },
+    {
+        "merged": "H:\\android_demo\\serialport\\app\\build\\intermediates\\res\\merged\\debug\\raw_lediledi.m4a.flat",
+        "source": "H:\\android_demo\\serialport\\app\\src\\main\\res\\raw\\lediledi.m4a"
+    },
+    {
+        "merged": "H:\\android_demo\\serialport\\app\\build\\intermediates\\res\\merged\\debug\\raw_xczlsdyg.mp3.flat",
+        "source": "H:\\android_demo\\serialport\\app\\src\\main\\res\\raw\\xczlsdyg.mp3"
+    },
+    {
+        "merged": "H:\\android_demo\\serialport\\app\\build\\intermediates\\res\\merged\\debug\\raw_tada.wav.flat",
+        "source": "H:\\android_demo\\serialport\\app\\src\\main\\res\\raw\\tada.wav"
+    },
+    {
+        "merged": "H:\\android_demo\\serialport\\app\\build\\intermediates\\res\\merged\\debug\\raw_ring.wav.flat",
+        "source": "H:\\android_demo\\serialport\\app\\src\\main\\res\\raw\\ring.wav"
+    },
+    {
+        "merged": "H:\\android_demo\\serialport\\app\\build\\intermediates\\res\\merged\\debug\\raw_qingren.mp3.flat",
+        "source": "H:\\android_demo\\serialport\\app\\src\\main\\res\\raw\\qingren.mp3"
+    },
+    {
+        "merged": "H:\\android_demo\\serialport\\app\\build\\intermediates\\res\\merged\\debug\\raw_ledi.m4a.flat",
+        "source": "H:\\android_demo\\serialport\\app\\src\\main\\res\\raw\\ledi.m4a"
+    },
+    {
+        "merged": "H:\\android_demo\\serialport\\app\\build\\intermediates\\res\\merged\\debug\\layout_sending01010101.xml.flat",
+        "source": "H:\\android_demo\\serialport\\app\\src\\main\\res\\layout\\sending01010101.xml"
+    },
+    {
+        "merged": "H:\\android_demo\\serialport\\app\\build\\intermediates\\res\\merged\\debug\\raw_readsecond.wav.flat",
+        "source": "H:\\android_demo\\serialport\\app\\src\\main\\res\\raw\\readsecond.wav"
+    },
+    {
+        "merged": "H:\\android_demo\\serialport\\app\\build\\intermediates\\res\\merged\\debug\\layout_loopback.xml.flat",
+        "source": "H:\\android_demo\\serialport\\app\\src\\main\\res\\layout\\loopback.xml"
+    },
+    {
+        "merged": "H:\\android_demo\\serialport\\app\\build\\intermediates\\res\\merged\\debug\\layout_main.xml.flat",
+        "source": "H:\\android_demo\\serialport\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "H:\\android_demo\\serialport\\app\\build\\intermediates\\res\\merged\\debug\\drawable_icon.png.flat",
+        "source": "H:\\android_demo\\serialport\\app\\src\\main\\res\\drawable\\icon.png"
+    }
+]

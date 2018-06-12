@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\android_demo\serialport\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e395b5a509238904db5c99932a28e048753996f4">
+        <dex dex="E:\android_demo\serialport\app\build\intermediates\pre-dexed\debug\instant-run_650fa26d6596075963039ef312472f6193d3fd10.jar" />
+    </item>
+    <item
+        jar="E:\android_demo\serialport\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="01b88b5206a8e270d10fdce13aad409903cb8124">
+        <dex dex="E:\android_demo\serialport\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_71b23b3246948204b95a03db3e1dde49db307326.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android_serialport_api.sample"
+    android:versionCode="3"
+    android:versionName="1.2" >
+    
+    
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>  
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    
+ 
+    
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:name="Application" >
+        <activity
+            android:label="@string/app_name"
+            android:name="ConsoleActivity" 
+            android:launchMode="singleInstance"
+            >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+        </activity>
+        
+        <receiver android:name=".BootBroadcastReceiver">  
+		  <intent-filter>  
+		    <action android:name="android.intent.action.BOOT_COMPLETED" />  
+		   </intent-filter>  
+		</receiver>   
+		
+        <service android:name=".ConsoleService"></service> 
+
+        
+        <activity android:name="SerialPortPreferences" >
+        </activity>
+<!--         <activity android:name="ConsoleActivity" >
+        </activity> -->
+<!--         <activity android:name="LoopbackActivity" >
+        </activity> -->
+        <activity android:name="Sending01010101Activity"></activity>
+        
+    </application>
+
+    <uses-sdk android:minSdkVersion="3" />
+
+</manifest>

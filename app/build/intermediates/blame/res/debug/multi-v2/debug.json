@@ -1,0 +1,47 @@
+{
+    "logs": [
+        {
+            "outputFile": "H:\\android_demo\\serialport\\app\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "H:\\android_demo\\serialport\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "4,3,25,26,28,32,39,34,41,36,43,33,40,35,42,31,38",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "116,56,940,1029,1132,1281,1560,1370,1663,1459,1766,1324,1610,1415,1715,1236,1508",
+                        "endLines": "24,3,25,27,29,32,39,34,41,36,43,33,40,35,42,31,38",
+                        "endColumns": "10,59,88,16,18,42,49,44,51,43,50,45,52,43,50,44,51",
+                        "endOffsets": "935,111,1024,1127,1228,1319,1605,1410,1710,1498,1812,1365,1658,1454,1761,1276,1555"
+                    },
+                    "to": {
+                        "startLines": "66,87,88,89,91,93,94,95,96,97,98,99,100,101,102,103,104",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1796,2620,2680,2769,2872,2973,3016,3066,3111,3163,3207,3258,3304,3357,3401,3452,3497",
+                        "endLines": "86,87,88,90,92,93,94,95,96,97,98,99,100,101,102,103,104",
+                        "endColumns": "10,59,88,16,18,42,49,44,51,43,50,45,52,43,50,44,51",
+                        "endOffsets": "2615,2675,2764,2867,2968,3011,3061,3106,3158,3202,3253,3299,3352,3396,3447,3492,3544"
+                    }
+                },
+                {
+                    "source": "H:\\android_demo\\serialport\\app\\src\\main\\res\\values\\baudrates.xml",
+                    "from": {
+                        "startLines": "3,35",
+                        "startColumns": "4,4",
+                        "startOffsets": "56,926",
+                        "endLines": "34,66",
+                        "endColumns": "19,19",
+                        "endOffsets": "921,1792"
+                    },
+                    "to": {
+                        "startLines": "2,34",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,925",
+                        "endLines": "33,65",
+                        "endColumns": "19,19",
+                        "endOffsets": "920,1791"
+                    }
+                }
+            ]
+        }
+    ]
+}
